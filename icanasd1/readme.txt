@@ -1,4 +1,4 @@
-Theme Name: 테마1
+Theme Name: 테마2
 Theme URI: http://theme.sir.kr/gnuboard5/demo/basic
 Maker: SIR
 Maker URI: http://sir.kr
