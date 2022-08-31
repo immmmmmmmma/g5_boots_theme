@@ -78,17 +78,24 @@ border:1px solid #558ab7 !important;
   background-size: cover;
 }
 .playerWrap{
-  height: 700.198px; 
-  width: 1920px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  padding-top: 36%;
+  position: relative;
+  overflow:hidden;
+}
+.playerWrap video{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
 }
 .mainV01{
   width: 1400px;
   height: 520px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .con01{
   width: 534px;
@@ -98,25 +105,33 @@ border:1px solid #558ab7 !important;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  animation: con01 1s normal forwards;
-  transition-duration: 1s;
 }
 .mainTxt{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
+   align-items:flex-start;
+   width: 534px;
 }
-
-@keyframes con1 {
-  form{ opacity: 1;
-        transform: translateX(-500px);}
-    to{
-        opacity: 0;
-        transform: translateX(0);
-      }
+.vcItem01,
+.vcItem02,
+.vcItem03,
+.vcItem05{
+  position: absolute;
 }
-
+.vcItem01{
+  top: -90px;
+  right: -20px;
+}
+.vcItem02{
+  right: -84px;
+  top: 195px;
+}
+.vcItem03{
+  top: 330px;
+  left: -46px;
+  z-index: 9999;
+}
 .gif{
   width: 150px;
   height: 150px;
@@ -127,6 +142,42 @@ border:1px solid #558ab7 !important;
   box-shadow: 10px 17.3px 40px 0 rgb(0 0 0 / 20%);
 }
 
+.mainV02{
+  background: url(../img/main_visual_bg01.png) no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 105px 0;
+  width: 1400px;
+}
+.vcItem04{
+  width: 522px
+}
+.mainV03{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con03{
+  position: relative;
+}
+.vcItem05{
+  left: 340px;
+  top: 180px;
+  animation-name: dart;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes dart{
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
 /* 중간 레이아웃 */
 
 /* 하단 레이아웃 */
