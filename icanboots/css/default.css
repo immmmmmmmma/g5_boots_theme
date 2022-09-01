@@ -19,7 +19,7 @@ button {cursor:pointer}
 
 textarea, select {font-family:'Malgun Gothic', dotum, sans-serif;font-size:1em}
 select {margin:0}
-p {margin:0;padding:0;word-break:break-all}
+p {margin:0;padding:0;word-break:break-all;font-size: 18px;}
 hr {display:none}
 pre {overflow-x:scroll;font-size:1.1em}
 a {color:#000;text-decoration:none}
@@ -96,6 +96,7 @@ border:1px solid #558ab7 !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 60px 0;
 }
 .con01{
   width: 534px;
@@ -106,6 +107,7 @@ border:1px solid #558ab7 !important;
   background-size: cover;
   position: relative;
 }
+
 .mainTxt{
    display: flex;
    flex-direction: column;
@@ -154,7 +156,8 @@ border:1px solid #558ab7 !important;
 .vcItem04{
   width: 522px
 }
-.mainV03{
+.mainV03,
+.mainV05{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,6 +180,21 @@ border:1px solid #558ab7 !important;
   to{
     transform: rotate(360deg);
   }
+}
+
+.mainV04{
+  background-image: url(../img/main_visual_bg02.png) !important;
+  background-size: 100%;
+  background-position: left -230px bottom;
+  align-items: flex-start;
+  padding: 63px 0;
+  position: relative;
+  display: flex;
+  width: 1400px;
+  background: #cef5f5;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
 }
 /* 중간 레이아웃 */
 

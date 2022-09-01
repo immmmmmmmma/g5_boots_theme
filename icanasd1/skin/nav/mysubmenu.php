@@ -4,9 +4,10 @@
 
 #mysubmenu{
 	position: absolute;
-	top: 0;
-    left: 46.5%;
+    left: 50%;
+	margin-top: -60px;
     transform: translateX(-50%);
+	background: #fff;
 }
 #snb {width:100%;}
 #snb > li.snb{width:100%;display:none;}

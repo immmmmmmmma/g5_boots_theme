@@ -14,62 +14,23 @@ if(G5_COMMUNITY_USE === false) {
 
 include_once(G5_THEME_PATH.'/head.php');
 ?>
-
-
-
-<div id="g5">
-	<?php
-		echo G5_THEME_PATH;
-		echo "<br>";
-		echo G5_THEME_IMG_URL."<BR>";
-		echo G5_THEME_CSS_URL."<BR>";
-		echo G5_THEME_JS_URL."<BR>";
-		echo G5_BBS_URL."<BR>";
-	?>
+<style>
+    .mView{
+        width: 100%;padding-top: 36%;_background: red;
+        position: relative;overflow: hidden;
+        }
+    .mView video{position: absolute;width: 100%;left: 50%;top: 50%; transform:translate(-50%,-50%)}
+</style>
+<div class="mView">
+    <video src="https://ybmlemon.com/img/web/HOME/main/ybmlemon.mp4" autoplay="" muted="" draggable="true"></video>
 </div>
 
-<div class="bannerWrap">
-	<div class="banner">
-		<div class="mytxtWrap">
-			<h2>
-				금융을 시작으로
-				일상에 도움이 되는 선한 서비스
-			</h2>
-			<p>
-				삼성생명, 삼성화재, 삼성카드, 삼성증권이 함께 만든
-				모니모는 오늘도 이 가치를 펼치고자 합니다
-			</p>
-		</div>
-	</div>
+<style>
+    .cont{height: 100px;background: skyblue;}
+</style>
+<div class="container bg-dark cont">
+
 </div>
-
-
-<div class="container">
-	<div class="row">
-		<div class="col">
-			<?php
-			// 이 함수가 바로 최신글을 추출하는 역할을 합니다.
-			// 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
-			// 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-			echo latest('theme/basic', 'notice', 4, 24);
-			?>
-		</div>
-	</div>
-</div>
-<div class="container">
-	<div class="row">
-		<div class="col">
-			<?php
-			// 이 함수가 바로 최신글을 추출하는 역할을 합니다.
-			// 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
-			// 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-			echo latest('theme/basic', 'qa', 4, 24);
-			?>
-		</div>
-	</div>
-</div>
-
-
 
 <?php
 include_once(G5_THEME_PATH.'/tail.php');
