@@ -28,7 +28,6 @@ include_once(G5_THEME_PATH.'/head.php');
 			<img src="<? echo G5_THEME_IMG_URL ?>/main_visual_01_item03.png" alt="" class="vcItem03 img-fluid">
 			<img src="<? echo G5_THEME_IMG_URL ?>/main_ani.gif" alt="" class="gif img-fluid">
 		</div>
-
 		<div class="mainTxt widht-534px text-start col-6" data-aos-duration="1000" data-aos="fade-left" style="padding-left: 105px">
 			<h3 class="fw-bold fs-1 mb-4">YBM 레몬만의 <br> 전용뷰어로 수업</h3>
 			<p>화상 회의실 같은 딱딱한 뷰어가 아닙니다. <br>

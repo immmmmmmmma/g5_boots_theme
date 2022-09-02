@@ -83,7 +83,11 @@ align-items: center;
   margin-top: -20px;
 }
 
-
+.mView{
+  width: 100%;padding-top: 36%;_background: red;
+  position: relative;overflow: hidden;
+  }
+.mView video{position: absolute;width: 100%;left: 50%;top: 50%; transform:translate(-50%,-50%)}
 /* 하단 레이아웃 */
 
 
